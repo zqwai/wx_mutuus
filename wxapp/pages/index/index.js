@@ -4,10 +4,58 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
+    getHeadText:'获取头像昵称',
+    mutuusUiDec:'MutuusUI 是一套基于WeUI原生样式开发的样式库，',
+    
+    list: [
+      {
+        id: 'form',
+        name: '表单',
+        open: false,
+        pages: ['button', 'list', 'input', 'slider', 'uploader']
+      },
+      {
+        id: 'widget',
+        name: '基础组件',
+        open: false,
+        pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
+      },
+      {
+        id: 'feedback',
+        name: '操作反馈',
+        open: false,
+        pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
+      },
+      {
+        id: 'nav',
+        name: '导航相关',
+        open: false,
+        pages: ['navbar', 'tabbar']
+      },
+      {
+        id: 'search',
+        name: '搜索相关',
+        open: false,
+        pages: ['searchbar']
+      }
+    ]
+  },
+  kindToggle: function (e) {
+    let id = e.currentTarget.id, list = this.data.list;
+    for (var i = 0, len = list.length; i < len; ++i) {
+      if (list[i].id == id) {
+        list[i].open = !list[i].open
+      } else {
+        list[i].open = false
+      }
+    }
+    this.setData({
+      list: list
+    });
   },
   //事件处理函数
   bindViewTap: function() {
@@ -43,6 +91,7 @@ Page({
       })
     }
   },
+  // 获取用户信息
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -52,3 +101,48 @@ Page({
     })
   }
 })
+
+
+
+
+
+
+
+
+  // ,
+
+  // "pages/button/button",
+  // "pages/list/list",
+  // "pages/input/input",
+  // "pages/slider/slider",
+  // "pages/uploader/uploader",
+  // "pages/article/article",
+  // "pages/badge/badge",
+  // "pages/flex/flex",
+  // "pages/footer/footer",
+  // "pages/gallery/gallery",
+  // "pages/grid/grid",
+  // "pages/icons/icons",
+  // "pages/loadmore/loadmore",
+  // "pages/panel/panel",
+  // "pages/preview/preview",
+  // "pages/progress/progress",
+  // "pages/actionsheet/actionsheet",
+  // "pages/dialog/dialog",
+  // "pages/msg/msg",
+  // "pages/msg/msg_success",
+  // "pages/msg/msg_fail",
+  // "pages/picker/picker",
+  // "pages/toast/toast",
+  // "pages/navbar/navbar",
+  // "pages/tabbar/tabbar",
+  // "pages/searchbar/searchbar"
+
+
+  // ,
+  // {
+  //   id: 'log',
+  //   name: '日志',
+  //   open: false,
+  //   pages: ['log']
+  // }

@@ -1,12 +1,42 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+
+      "pages/index/button/button",
+      "pages/index/list/list",
+      "pages/index/input/input",
+      "pages/index/slider/slider",
+      "pages/index/uploader/uploader",
+      "pages/index/article/article",
+      "pages/index/badge/badge",
+      "pages/index/flex/flex",
+      "pages/index/footer/footer",
+      "pages/index/gallery/gallery",
+      "pages/index/grid/grid",
+      "pages/index/icons/icons",
+      "pages/index/loadmore/loadmore",
+      "pages/index/panel/panel",
+      "pages/index/preview/preview",
+      "pages/index/progress/progress",
+      "pages/index/actionsheet/actionsheet",
+      "pages/index/dialog/dialog",
+      "pages/index/msg/msg",
+      "pages/index/msg/msg_success",
+      "pages/index/msg/msg_fail",
+      "pages/index/picker/picker",
+      "pages/index/toast/toast",
+      "pages/index/navbar/navbar",
+      "pages/index/tabbar/tabbar",
+      "pages/index/searchbar/searchbar"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarBackgroundColor": "#6799b8",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "mutuus成长追踪系统",
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
   }
+
 }
