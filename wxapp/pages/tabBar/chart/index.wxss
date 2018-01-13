@@ -1,0 +1,53 @@
+@import './../../fonts/map/iconfont.wxss';
+page,
+.page-chart{
+  height: 100%;
+  width: 100%;
+}
+.page-chart{
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-map{
+  width: 100%;
+  flex: 1;
+}
+#mutuusMap{
+  width: 100%;
+  height: 100%;
+}
+.btn-positioning{
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  border: 0;
+  z-index: 3;
+  display: block;
+}
+.btn-positioning .icon{
+  font-size: 40rpx;
+}
+
+.header{
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+  text-align: center
+}
+.flex-wrp{
+  display:flex;
+  flex-direction: row
+}
+.flex-item{
+  flex: 1;
+  height: 100%;
+  font-size: 26rpx;
+}

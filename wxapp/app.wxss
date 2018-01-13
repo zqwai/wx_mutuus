@@ -1,9 +1,7 @@
-/**app.wxss**/
-
-@import 'style/weui.wxss';
+ @import 'pages/style/weui.wxss'; 
 
 page{
-    background-color: #F8F8F8;
+    /* background-color: #F8F8F8; */
     font-size: 16px;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
@@ -35,3 +33,27 @@ page{
     text-align: left;
     font-size: 14px;
 }
+
+.page{
+  /* height: 100%; */
+   width: 100%; 
+   overflow: hidden;
+  position: relative;
+}
+.page__company{
+  background-color: #6799b8;
+}
+.page__chart{
+  background-color: #6799b8;
+}
+.page__plan{
+  background-color: #6799b8;
+}
+.page__teacher{
+  background-color: #6799b8;
+}
+.page__userinfo{
+  background-color: #6799b8;
+}
+
+

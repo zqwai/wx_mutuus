@@ -1,3 +1,4 @@
+
 //app.js
 App({
   onLaunch: function () {
@@ -10,7 +11,7 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        console.log('登录成功');
+        // console.log('登录成功');
       }
     })
     // 获取用户信息
@@ -32,9 +33,23 @@ App({
           })
         }
       }
-    })
+    });
+
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+
+    // mutuus banner 轮播图片地址
+    // companyBannerImgUrls: []
+
+
   }
 })
+
+// app.json 时效设置
+// "networkTimeout": {
+//   "request": 10000,
+//     "connectSocket": 10000,
+//       "uploadFile": 10000,
+//         "downloadFile": 10000
+// },

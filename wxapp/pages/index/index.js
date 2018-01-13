@@ -9,7 +9,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
 
     getHeadText:'获取头像昵称',
-    mutuusUiDec:'MutuusUI 是一套基于WeUI原生样式开发的样式库，',
+    mutuusUiDec:'MutuusUI 是一套基于WeUI原生样式开发的样式库，后续将推出过多配色方案。',
     
     list: [
       {
@@ -109,7 +109,43 @@ Page({
 
 
 
-  // ,
+// 滚动到顶部
+
+// <view class="floatbtn">
+//   <view id="back-to-top" class="back-to-top">
+//     <image class='arrow-up' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAkCAMAAADip6m2AAAAolBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAHBwcAAAD////9/f37+/vt7e25ubn39/cKCgrz8/Pe3t7c3Nz+/v729vbW1tZra2tKSkoAAABpaWlgYGD9/f38/Pz5+fn5+fn39/fz8/Px8fHu7u7q6urm5ubj4+Pd3d3y8vLX19fJycnAwMC4uLisrKyhoaGVlZWGhoajo6MpKSkxMTGAgID///9oDYyzAAAANXRSTlMAAwcLFR0SGRAO+efJbSOcIqBDQvLNbTEpGxEQ9e3h29XDvLOsnJOJiIFpYVlNRkE7MiwfDLl52bwAAAGFSURBVEjH3ZXZboMwFERbHAMhC6EFQtrs+777/3+t98bGjmwqy32plHmLPYfMiYTy9nJ5F/kb693j+O4h7Y567SZjzbYHuDv72WCQxgfSjixpReyRqEWAdmK/YyaTfAHtpivjIo6TUReTZYxxcZzupju/XufP4g660aYD2USmuF13sKeP7Ae6uF13fKZBDRLQ81gTt+rOCmD9MPSBLmaauEV3hWidQOqIr57FLbrpDllCPAghSO9SU7xad3QCNiRQgwAeAn0a6eLVutOC4mRk+SCcToupIW7qsmWnByw25B3Svc6SaeKGbn9LA8UqGsW3fVMc2VJ3eJS6apcUPw5LcVmAq1J30qWBL1mN9gPanZTiUBE3pe5C6cpo4gtRjXkJjtf8cbnSlTHEcz5yTTwBh00UOVToVogfGvibhQq+pCyr0q0Wz1h6kTDsyZObPvn36bckh6qA8YE1eIUEa6GxyyeKEzhC1MLy6byL3yNP4BNn7TSWVRffHYHaI7qq7PB3qMr/mh8s20b2bOZlXQAAAABJRU5ErkJggg==' />
+//   </view>
+// </view>
+
+// .floatbtn {
+//   position: fixed;
+//   right: 2%;
+//   bottom: 20rpx;
+//   width: 60rpx;
+//   text-align: center;
+//   z-index: 999;
+// }
+// .floatbtn .back-to-top{
+//   cursor: pointer;
+//   background: rgba(0,0,0,.5);
+//   border-radius: 5rpx;
+//   width: 60rpx;
+//   height: 60rpx;
+//   line-height: 60rpx;
+//   color: rgba(255,255,255,.7);
+//   display: block;
+//   position: relative;
+//   margin: .5rem 0;
+// }
+// .floatbtn .back-to-top .arrow-up{
+//   width:40rpx;
+//   height:25rpx;
+//   position: relative;
+// }
+
+
+
+
 
   // "pages/button/button",
   // "pages/list/list",

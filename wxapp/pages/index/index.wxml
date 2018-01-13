@@ -7,7 +7,7 @@
         <view class="userinfo">
           <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> {{getHeadText}} </button>
           <block wx:else>
-            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
             <text class="userinfo-nickname">{{userInfo.nickName}}</text>
           </block>
         </view>
@@ -39,6 +39,8 @@
         </view>
     </view>
     <view class="page__ft">
-        <image src="./images/icon_footer.png" style="width: 84px; height: 19px;"></image>
+        <!-- <image src="./images/icon_footer.png" style="width: 84px; height: 19px;"></image> -->
+        <view style='font-size:22rpx;color:#777' bindtap="bindViewTap" >启动日志</view>
+
     </view>
 </view>
