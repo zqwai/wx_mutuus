@@ -33,15 +33,49 @@ App({
         }
       }
     });
+    wx.getSystemInfo({
+      success: res => {
+        // 手机品牌 手机型号
+        // this.globalData.brand = res.brand;
+        // this.globalData.model = res.model;
+        // 设备像素比 屏幕宽度 屏幕高度
+        this.globalData.pixelRatio = res.pixelRatio;
+        this.globalData.screenHeight = res.screenHeight;
+        this.globalData.screenWidth = res.screenWidth;
+        // 可使用窗口宽度
+        this.globalData.windowWidth = res.windowWidth;
+        this.globalData.windowHeight = res.windowHeight;
+        // 状态栏的高度
+        this.globalData.statusBarHeight = res.statusBarHeight;
 
+        // this.globalData.language = res.language;
+        // this.globalData.version = res.version;
+        // this.globalData.system = res.system;
+        // this.globalData.platform = res.platform;
+        // this.globalData.fontSizeSetting = res.fontSizeSetting;
+        // this.globalData.SDKVersion = res.SDKVersion;
+
+        // console.log(app.globalData.brand);
+        // console.log(app.globalData.model);
+        // console.log(app.globalData.pixelRatio);
+        // console.log(app.globalData.screenWidth);
+        // console.log(app.globalData.screenHeight);
+        // console.log(app.globalData.windowWidth);
+        // console.log(app.globalData.windowHeight),
+        // console.log(app.globalData.statusBarHeight),
+        // console.log(app.globalData.language),
+        // console.log(app.globalData.version),
+        // console.log(app.globalData.system),
+        // console.log(app.globalData.platform),
+        // console.log(app.globalData.fontSizeSetting),
+        // console.log(app.globalData.SDKVersion)
+        
+      }
+    })
+    
   },
   globalData: {
     userInfo: null,
-
-    // mutuus banner 轮播图片地址
-    // companyBannerImgUrls: []
-
-
   }
 })
 

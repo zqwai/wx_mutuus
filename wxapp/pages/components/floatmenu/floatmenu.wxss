@@ -1,0 +1,120 @@
+.float-side-menu{
+  position: fixed;
+	right: 20rpx;
+	top: 20rpx;
+	width: 70rpx;
+	line-height: 70rpx;
+	z-index: 999;
+  
+}
+.menu-item{
+  position: relative;
+  z-index: 999;
+  width: 70rpx;
+  height: 70rpx;
+  background-color:rgba(0,0,0,.5);
+  border-radius: 50%;
+}
+
+.menu-line1,
+.menu-line2,
+.menu-line3{
+  height: 4rpx;
+  background-color: #fff;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 50%;
+  transition: all .5s;
+}
+.menu-line1{
+  margin-top:-2rpx;
+}
+.menu-line2{
+  transform: translateY(-12rpx);
+  -webkit-transform: translateY(-12rpx);
+}
+.menu-line3{
+  transform: translateY(8rpx);
+  -webkit-transform: translateY(8rpx);
+}
+
+.showView .menu-line1{
+  opacity: 0
+}
+.showView .menu-line2{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.showView .menu-line3{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-cont{
+  position: absolute;
+  top:-20rpx;
+  right:-20rpx;
+  z-index: 900;
+  /* background-color:rgba(255,255,250,1); */
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  width: 700rpx;
+  height: auto;
+	text-align: left;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content:center; */
+	
+}
+.showView .menu-cont{
+  /* display: block; */
+  -webkit-animation: moveFromTopFade .7s ease both;
+	animation: moveFromTopFade .7s ease both;
+}
+.view_hide .menu-cont{
+  /* display: none; */
+  -webkit-animation: moveOutTopFade .7s ease both;
+	animation: moveOutTopFade .7s ease both;
+}
+.menu-cont .item{
+  color: #fff;
+  font-size: 26rpx;
+  padding:20rpx 20rpx;
+  border-top:1rpx rgba(255,255,250,.1) solid;
+  background-color: #f60;
+}
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes moveFromTopFade {
+	from {
+    opacity:0;
+    -webkit-transform: translateY(-150%);
+  }
+}
+@keyframes moveFromTopFade {
+	from { 
+    opacity:0;
+    transform: translateY(-150%); }
+}
+
+@-webkit-keyframes moveOutTopFade {
+	to {
+    opacity:0;
+    -webkit-transform: translateY(-150%); 
+  }
+}
+@keyframes moveOutTopFade {
+	to {
+    opacity:0;
+    transform: translateY(-150%); 
+  }
+}

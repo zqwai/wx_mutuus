@@ -1,0 +1,12 @@
+<view class="float-side-menu {{showView?'view_hide':'showView'}}">
+  <view class="menu-item" catchtap='onTap'>
+    <view class="menu-line1"></view>
+    <view class="menu-line2"></view>
+    <view class="menu-line3"></view>
+  </view>
+  <view class="menu-cont" style="width:{{windowWidth}}px;">
+    <block wx:for="{{menuList}}" wx:key="index" wx:for-index="idx" >
+      <navigator url="{{item.src}}" class='item' hover-class="item-hover"  bindtap='onCloseContentTap'>{{item.text}}</navigator>
+    </block>
+  </view>
+</view>

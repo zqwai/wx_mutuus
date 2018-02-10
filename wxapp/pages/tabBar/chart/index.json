@@ -1,4 +1,7 @@
 {
+  "usingComponents": {
+    "floatSideMenu": "./../../components/floatmenu/floatmenu"
+  },
     "navigationBarTitleText": "成长报告",
     "navigationBarBackgroundColor": "#f60"
 }

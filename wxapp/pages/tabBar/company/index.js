@@ -9,10 +9,10 @@ Page({
     // banner相关配置
     // imgUrls: app.globalData.companyBannerImgUrls,
     imgUrls: [
-      './../../pic/mutuus_show_00.jpg',
-      './../../pic/mutuus_show_01.jpg',
-      './../../pic/mutuus_show_02.jpg',
-      './../../pic/mutuus_show_03.jpg'
+      './../../static/pic/company/mutuus_show_00.jpg',
+      './../../static/pic/company/mutuus_show_01.jpg',
+      './../../static/pic/company/mutuus_show_02.jpg',
+      './../../static/pic/company/mutuus_show_03.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -31,22 +31,22 @@ Page({
     studentInfo: [
       {
         id :'3',
-        src: '../../pic/3.svg',
+        src: '../../static/pic/company/3.svg',
         info: 'true potential',
       },
       {
         id: '4',
-        src: '../../pic/4.svg',
+        src: '../../static/pic/company/4.svg',
         info: 'true potential',
       },
       {
         id: '17',
-        src: '../../pic/17.svg',
+        src: '../../static/pic/company/17.svg',
         info: 'true potential',
       },
       {
         id: '356',
-        src: '../../pic/356.svg',
+        src: '../../static/pic/company/356.svg',
         info: 'true potential',
       },
     ],

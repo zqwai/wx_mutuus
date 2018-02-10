@@ -1,4 +1,5 @@
-@import '../../style/zqwai_buttom.wxss';
+@import '../../static/style/zqwai_buttom.wxss';
+
 .swiper-banner{
   height: 200px;
 }

@@ -1,4 +1,4 @@
-@import './../../fonts/map/iconfont.wxss';
+@import './../../static/fonts/map/iconfont.wxss';
 page,
 .page-chart{
   height: 100%;
