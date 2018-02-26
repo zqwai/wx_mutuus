@@ -1,3 +1,12 @@
+/*
+ * Weapp charts v1.0
+ *
+ * https://github.com/zqwai/
+ * 2018-2-10
+ *
+ * Designed and built with zqwai.com
+ */
+
 // requestAnimationFrame不支持 setTimeout兼容处理
 let createAnimationFrame = function () {
   if (typeof requestAnimationFrame !== 'undefined') {

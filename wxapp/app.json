@@ -46,9 +46,9 @@
     ]
   },
   "pages": [
+    "pages/tabBar/plan/index",
     "pages/tabBar/chart/index",
     "pages/tabBar/company/index",
-    "pages/tabBar/plan/index",
     "pages/tabBar/teacher/index",
     "pages/tabBar/userinfo/index",
 
