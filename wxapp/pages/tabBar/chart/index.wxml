@@ -5,8 +5,7 @@
     class="myCanvas" 
     style="height:{{systemInfo.windowHeight-50}}px;width:{{systemInfo.windowWidth}}px"
     bind:touchstart="cavTouchstart"
-    hidden="{{flag ? true : false}}
-    ></canvas> 
+    hidden="{{flag ? true : false}}></canvas> 
   </view>
 
   <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%;height:50px">

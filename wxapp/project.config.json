@@ -8,10 +8,12 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.8",
-	"appid": "wx1080270bc6f6692a",
+	"libVersion": "2.10.4",
+	"appid": "wxe6f7f5a8275ca2b6",
 	"projectname": "wx_mutuus",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
